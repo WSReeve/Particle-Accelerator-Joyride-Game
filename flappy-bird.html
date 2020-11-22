@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proton Accelorator Joyride</title>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.min.js"></script>
+    <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.7.0/dist/tf.min.js"></script>
+    <script language="javascript" type="text/javascript" src="nn.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <script language="javascript" type="text/javascript" src="proton.js"></script>
+    <script language="javascript" type="text/javascript" src="obsticle.js"></script>
+    <script language="javascript" type="text/javascript" src="geneticAlg.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #pauseButton {
+            visibility: hidden;
+        }
+        #pauseLabel {
+            font-size: 1.5rem;
+            font-weight: 600;
+            background-color: blue;
+            color: white;
+            padding: .5rem 1rem;
+            border-radius: 2rem;
+            position: absolute;
+            right: 1rem;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>go.</h1>
+    <input type="checkbox" name="pauseButton" id="pauseButton" onclick="pause()">
+    <label for="pauseButton" id="pauseLabel">Pause</label>
+</body>
+</html>
